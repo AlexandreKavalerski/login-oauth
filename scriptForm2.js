@@ -12,13 +12,17 @@ function clickSubmit(){
             if(result.sucesso){
                 console.log(result);
                 console.log(result.urlCallback + '?access_token=' + result.token);
-                // window.location.replace(result.urlCallback + '?access_token=' + result.token);
+                window.location.replace("http://" + result.urlCallback + '?access_token=' + result.token);
             }
         });
 	// document.formLogin.target = "_self";
 	// document.formLogin.action = "http://localhost:3000/auth";
 	// document.formLogin.submit();
 }
+
+// function clickSubmit(){
+//     window.location.replace("http://www.w3schools.com");
+// }
 
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;
