@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8" />
+	<title>OAuth System - S.S</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body id="home">
+		<div class="rain">
+			<div class="border start">
+				<form name="formLogin" method="post" target="_self">
+					<label for="login">Login</label>
+					<input name="login" type="text" placeholder="Login" id="login"/>
+					<label for="senha">Senha</label>
+					<input name="senha" type="password" placeholder="Senha" id="senha"/>
+					<input type="hidden" name="chaveApp" value="" id="chaveApp">
+                    <input type="button" value="Entrar" onclick="clickSubmit()"/>
+				</form>
+			</div>
+		</div>
+		<script src="scriptForm1.js"></script>
+		<script src="scriptForm2.js"></script>
+	</body>
+</html>
